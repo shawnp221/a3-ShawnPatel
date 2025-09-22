@@ -44,5 +44,5 @@ Include a very brief summary of your project here. Images are encouraged, along 
 
 ## Technical Achievement - 100 % Google Lighthouse Tests (completed ✅)(5 pts):
 - My webpage got 100% (not 98%, not 99%, but 100%) in all four lighthouse tests required for this assignment.
-- 
+- ![LightHouse](Lighthouse.png)
   
