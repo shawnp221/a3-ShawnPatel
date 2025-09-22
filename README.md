@@ -29,8 +29,9 @@ Render (or alternative server) link e.g. https://a3-shawnpatel.onrender.com/
 - Custom ensureAuthenticated function – Protects routes by checking if the user is logged in; redirects to /login if not.
 - Route-specific middleware (e.g., in /submit, /update, /delete) – Ensures each operation is performed only for the authenticated user and automatically associates data with that user.
 - Error handling within routes – Each route includes error handling to respond with clear messages for missing data, unauthorized access, or internal server errors.
-
-
+![GitHub Login Info](GitHub%20Login%20Info.png)
+![Main To Do Page](Main%20To%20Do%20Page.png)
+![To Do Login](To%20Do%20Login.png)
 
 ## Baseline Requirement - Server (completed ✅)(15 pts):
 - Created the server using Express as required for this assignment. The server can be found in server.js
