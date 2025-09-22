@@ -1,18 +1,34 @@
 Assignment 3 - Persistence: Two-tier Web Application with Database, Express server, and CSS template
 ===
-## Your Web Application Title
+## To Do List Application
 
-Your Render (or alternative server) link e.g. http://a3-joshua-cuneo.render.me
+Render (or alternative server) link e.g. https://a3-shawnpatel.onrender.com/
 
-Include a very brief summary of your project here. Images are encouraged, along with concise, high-level text. Be sure to include:
 
-- the goal of the application
-- challenges you faced in realizing the application
-- what authentication strategy you chose to use and why (choosing one because it seemed the easiest to implement is perfectly acceptable)
-- what CSS framework you used and why
-  - include any modifications to the CSS framework you made via custom CSS you authored
-- a list of Express middleware packages you used and a short (one sentence) summary of what each one does. If you use a custom function, please add a little more detail about what it does.
-
+### Goal of the Application: 
+- The goal of the application is to provide an authenticated To Do management system where each user can securely log in with GitHub, create, view, modify, and delete their own tasks. Each task includes a name, creation date, and deadline date, and the application automatically calculates and displays a priority level for each entry. 
+### Challenges Faced: 
+- Integrating GitHub OAuth authentication and ensuring that each user only sees their own data. 
+- Dynamically updating the task table after form submissions without requiring a full page reload. 
+- Handling date inputs and calculating priority levels automatically based on creation and deadline dates. 
+- Ensuring proper validation and UX for editing and deleting tasks while maintaining responsive styling.
+### Authentication Strategy:
+- GitHub OAuth was chosen because it provides secure, standardized authentication, and allows for easy association of tasks with individual user accounts. Using GitHub also simplifies user management since no separate username/password system is required. 
+### CSS Framework Used:
+- Bootstrap 5 was used to quickly build a responsive and visually appealing interface with minimal custom CSS. 
+- Custom CSS modifications include: Styling the login container with a video background overlay. 
+- Custom button styles for GitHub login. Table and form styling to match the app theme and improve readability. 
+- Profile dropdown hover and icon adjustments. 
+### Express Middleware Packages and Functions Used:
+- express.json() – Parses incoming JSON payloads in request bodies so req.body is available.
+- express.urlencoded({ extended: true }) – Parses URL-encoded form data from HTML forms.
+- express.static() – Serves static files like CSS, JS, and images from the public folder.
+- express-session – Manages user sessions, keeping users logged in across requests.
+- passport – Handles authentication strategies and manages user login state.
+- passport-github2 – Implements GitHub OAuth strategy for logging in with GitHub accounts.
+- Custom ensureAuthenticated function – Protects routes by checking if the user is logged in; redirects to /login if not.
+- Route-specific middleware (e.g., in /submit, /update, /delete) – Ensures each operation is performed only for the authenticated user and automatically associates data with that user.
+- Error handling within routes – Each route includes error handling to respond with clear messages for missing data, unauthorized access, or internal server errors.
 
 
 
