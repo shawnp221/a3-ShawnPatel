@@ -2,7 +2,7 @@ Assignment 3 - Persistence: Two-tier Web Application with Database, Express serv
 ===
 ## To Do List Application
 
-Vercel link e.g. https://a3-shawn-patel.vercel.app/
+Render Link: https://a3-shawnpatel.onrender.com/
 
 
 ### Goal of the Application: 
@@ -59,8 +59,6 @@ Vercel link e.g. https://a3-shawn-patel.vercel.app/
 ## Technical Achievement - OAuth Implementation (completed ✅)(10 pts):
 - I implemented OAuth for this assignment using the passport.js library via the GitHub strategy. My website uses GitHub authentication and each user sees only data pertaining to their account (data they submitted through the to-do form).
 
-## Technical Achievement - Hosting Service (completed ✅)(5 pts):
-- For Assignment 3, I chose to host my app on Vercel instead of Render, taking advantage of its free tier. Vercel made deployment very easy due to its tight GitHub integration, allowing me to push changes and have them automatically deployed with minimal configuration. The platform also provides automatic HTTPS, fast build times, and an intuitive interface for managing deployments. Compared to Render, I found Vercel faster and simpler to use, though the free tier does have stricter limits on serverless function execution and fewer built-in database options. Overall, Vercel provided a smooth and reliable hosting experience suitable for this assignment.
 
 ## Technical Achievement - 100 % Google Lighthouse Tests (completed ✅)(5 pts):
 - My webpage got 100% (not 98%, not 99%, but 100%) in all four lighthouse tests required for this assignment.
