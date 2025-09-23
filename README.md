@@ -42,7 +42,7 @@ Render Link: https://a3-shawnpatel.onrender.com/
 ## Baseline Requirement - Form/Entry (completed ✅)(15 pts):
 - There is a form functionality where users are allowed to add new to-do items and once added, they can modify or delete them as well. These entries are specific to their account and it is connected with their GitHub account.
 
-## Baseline Requirement - Form/Entry (completed ✅)(15 pts):
+## Baseline Requirement - MongoDB (completed ✅)(15 pts):
 - The data storage is persistent across server sessions using MongoDB. All to-do items will persist even after logging out/closing window and when re-logging back in, that data will be there for each user.
 
 ## Baseline Requirement - CSS Framework/Template (completed ✅)(10 pts):
